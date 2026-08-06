@@ -72,18 +72,19 @@ Built **local-first** with **deny-by-default security**, PocketRelay keeps your 
 
 3. **Run Guided Setup Wizard:**
    ```bash
-   pocketrelay init
+   uv run pocketrelay init
+   # Or `pocketrelay init` if virtual environment is activated
    ```
    The wizard will auto-detect installed agent CLIs, prompt for your Telegram Bot Token, set up your project directory, generate secure local configs, and issue a pairing code.
 
 4. **Verify System Health:**
    ```bash
-   pocketrelay doctor
+   uv run pocketrelay doctor
    ```
 
 5. **Start PocketRelay:**
    ```bash
-   pocketrelay run
+   uv run pocketrelay run
    ```
 
 ---

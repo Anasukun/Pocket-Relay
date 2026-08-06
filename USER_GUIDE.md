@@ -12,9 +12,20 @@ Welcome! Follow these simple steps to get PocketRelay running on your phone.
 
 2. **Connect PocketRelay**
    1. Open your computer's terminal.
-   2. Type the command `uv run pocketrelay init` and press enter.
-   3. The screen will ask you to paste the API Token. Paste it in.
-   4. The screen will then show you a special 6-digit code. Keep this code handy.
+   2. Navigate into the PocketRelay project folder:
+      ```bash
+      cd PocketRelay
+      ```
+   3. Sync and prepare dependencies (first time only):
+      ```bash
+      uv sync
+      ```
+   4. Run the setup wizard:
+      ```bash
+      uv run pocketrelay init
+      ```
+   5. The screen will ask you to paste the API Token. Paste it in.
+   6. The screen will then show you a special 6-digit code. Keep this code handy.
 
 3. **Pair your Phone**
    1. Go back to the Telegram app on your phone.
@@ -23,7 +34,11 @@ Welcome! Follow these simple steps to get PocketRelay running on your phone.
    4. Your phone is now securely connected to your computer!
 
 4. **Start PocketRelay**
-   1. On your computer's terminal, type `uv run pocketrelay run` and press enter.
+   1. In your computer's terminal (inside the `PocketRelay` folder), type:
+      ```bash
+      uv run pocketrelay run
+      ```
+      and press enter.
    2. That's it! You can now send messages to your bot on Telegram, and it will help you with your project.
 
 ### Safety Features
