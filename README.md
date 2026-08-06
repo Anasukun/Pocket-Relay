@@ -52,19 +52,19 @@ Built **local-first** with **deny-by-default security**, PocketRelay keeps your 
 
 ### Installation
 
-#### 🚀 Option 1: One-Tap Automatic Installer (Easiest)
+#### 🚀 Option 1: Global Tool Installation (Recommended for Users)
 
-Run a single command in your terminal to automatically install `uv`, install `pocketrelay` globally, and launch the setup wizard:
+Install PocketRelay directly from GitHub without cloning or downloading repository files manually:
 
-- **Windows (PowerShell):**
-  ```powershell
-  iwr -useb https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.ps1 | iex
-  ```
+```bash
+uv tool install git+https://github.com/Anasukun/Pocket-Relay.git
+```
+*(Or using `pipx`: `pipx install git+https://github.com/Anasukun/Pocket-Relay.git`)*
 
-- **Linux / macOS (Terminal):**
-  ```bash
-  curl -fsSL https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.sh | bash
-  ```
+Once installed, run the setup wizard from any terminal window:
+```bash
+pocketrelay init
+```
 
 ---
 

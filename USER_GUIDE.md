@@ -10,23 +10,25 @@ Welcome! Follow these simple steps to get PocketRelay running on your phone.
    5. Choose a username that ends in "bot" (for example, "myhelper123_bot").
    6. BotFather will give you a long password called an API Token. Copy that token.
 
-2. **Connect & Install PocketRelay**
+2. **Install PocketRelay**
    
-   **Option A: 🚀 One-Tap Automatic Installer (Easiest)**
-   - **Windows (PowerShell):**
-     ```powershell
-     iwr -useb https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.ps1 | iex
-     ```
-   - **Linux / macOS (Terminal):**
-     ```bash
-     curl -fsSL https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.sh | bash
-     ```
-   *This automatically installs dependencies, sets up PocketRelay globally, and launches the setup wizard!*
+   **Option A: 🚀 Quick Tool Install (No repo download required)**
+   Run this single command in your terminal to install `pocketrelay` globally:
+   ```bash
+   uv tool install git+https://github.com/Anasukun/Pocket-Relay.git
+   ```
+   *(Or using `pipx`: `pipx install git+https://github.com/Anasukun/Pocket-Relay.git`)*
+
+   Once installed, run the setup wizard from any terminal:
+   ```bash
+   pocketrelay init
+   ```
+   *Follow the on-screen instructions to paste your Telegram API Token and receive your 6-digit pairing code.*
 
    ---
 
-   **Option B: 🛠️ Manual Installation (Developers)**
-   1. Open terminal and navigate into the PocketRelay project folder:
+   **Option B: 🛠️ Manual Clone & Setup (Developers)**
+   1. Open terminal and navigate into the cloned `PocketRelay` folder:
       ```bash
       cd PocketRelay
       ```
@@ -46,11 +48,11 @@ Welcome! Follow these simple steps to get PocketRelay running on your phone.
    4. Your phone is now securely connected to your computer!
 
 4. **Start PocketRelay**
-   1. In your computer's terminal (inside the `PocketRelay` folder), type:
+   1. In your computer's terminal, type:
       ```bash
-      uv run pocketrelay run
+      pocketrelay run
       ```
-      and press enter.
+      *(Or `uv run pocketrelay run` if you built from source)*
    2. That's it! You can now send messages to your bot on Telegram, and it will help you with your project.
 
 ### Safety Features
