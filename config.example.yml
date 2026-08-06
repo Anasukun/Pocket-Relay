@@ -1,0 +1,35 @@
+app:
+  name: PocketRelay
+  mode: local
+  data_dir: ./data
+  worktree_dir: ./data/worktrees
+  max_concurrent_tasks: 1
+  default_task_timeout_seconds: 900
+  telemetry_enabled: false
+
+telegram:
+  transport: polling
+  owner_ids:
+    - 123456789
+  allowed_chat_types:
+    - private
+  reject_unknown_users: true
+  max_prompt_length: 12000
+
+security:
+  require_pairing: true
+  pairing_code_ttl_seconds: 300
+  redact_secrets: true
+  allow_raw_shell: false
+  allow_auto_commit: false
+  allow_auto_push: false
+  allow_non_workspace_files: false
+
+projects:
+  - slug: example
+    display_name: Example Project
+    repository_path: C:/Projects/Example
+    adapter: antigravity-cli
+    default_branch: main
+    allowed_test_commands:
+      - ["pytest"]

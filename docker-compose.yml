@@ -1,0 +1,10 @@
+services:
+  pocketrelay:
+    build: .
+    container_name: pocketrelay
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./config.yml:/app/config.yml:ro
