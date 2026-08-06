@@ -3,7 +3,7 @@
 > **A Free-to-Use Mobile Remote for Google Antigravity & AI Coding Agents via Telegram**
 
 [![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Security Status](https://img.shields.io/badge/security-hardened-success.svg)](SECURITY.md)
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](Dockerfile)
 
@@ -182,5 +182,5 @@ For security vulnerabilities reporting, please see [SECURITY.md](SECURITY.md).
 
 ## 📄 License & Terms
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 Please review our [TERMS_OF_USE.md](TERMS_OF_USE.md) and [PRIVACY.md](PRIVACY.md) for details regarding data privacy and usage guidelines.
