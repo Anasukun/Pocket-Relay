@@ -10,22 +10,34 @@ Welcome! Follow these simple steps to get PocketRelay running on your phone.
    5. Choose a username that ends in "bot" (for example, "myhelper123_bot").
    6. BotFather will give you a long password called an API Token. Copy that token.
 
-2. **Connect PocketRelay**
-   1. Open your computer's terminal.
-   2. Navigate into the PocketRelay project folder:
+2. **Connect & Install PocketRelay**
+   
+   **Option A: 🚀 One-Tap Automatic Installer (Easiest)**
+   - **Windows (PowerShell):**
+     ```powershell
+     iwr -useb https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.ps1 | iex
+     ```
+   - **Linux / macOS (Terminal):**
+     ```bash
+     curl -fsSL https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.sh | bash
+     ```
+   *This automatically installs dependencies, sets up PocketRelay globally, and launches the setup wizard!*
+
+   ---
+
+   **Option B: 🛠️ Manual Installation (Developers)**
+   1. Open terminal and navigate into the PocketRelay project folder:
       ```bash
       cd PocketRelay
       ```
-   3. Sync and prepare dependencies (first time only):
+   2. Sync dependencies:
       ```bash
       uv sync
       ```
-   4. Run the setup wizard:
+   3. Launch setup wizard:
       ```bash
       uv run pocketrelay init
       ```
-   5. The screen will ask you to paste the API Token. Paste it in.
-   6. The screen will then show you a special 6-digit code. Keep this code handy.
 
 3. **Pair your Phone**
    1. Go back to the Telegram app on your phone.

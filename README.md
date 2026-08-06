@@ -52,6 +52,24 @@ Built **local-first** with **deny-by-default security**, PocketRelay keeps your 
 
 ### Installation
 
+#### 🚀 Option 1: One-Tap Automatic Installer (Easiest)
+
+Run a single command in your terminal to automatically install `uv`, install `pocketrelay` globally, and launch the setup wizard:
+
+- **Windows (PowerShell):**
+  ```powershell
+  iwr -useb https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.ps1 | iex
+  ```
+
+- **Linux / macOS (Terminal):**
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/Anasukun/Pocket-Relay/main/install.sh | bash
+  ```
+
+---
+
+#### 🛠️ Option 2: Manual Clone & Setup (Developers)
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Anasukun/Pocket-Relay.git
@@ -73,9 +91,7 @@ Built **local-first** with **deny-by-default security**, PocketRelay keeps your 
 3. **Run Guided Setup Wizard:**
    ```bash
    uv run pocketrelay init
-   # Or `pocketrelay init` if virtual environment is activated
    ```
-   The wizard will auto-detect installed agent CLIs, prompt for your Telegram Bot Token, set up your project directory, generate secure local configs, and issue a pairing code.
 
 4. **Verify System Health:**
    ```bash
